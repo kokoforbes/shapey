@@ -1,0 +1,33 @@
+.filters {
+  
+
+  
+}
+
+.shapes {
+  padding: 1rem  0;
+
+  .btnRounded {
+    padding: 0.3rem 1.2rem;
+    margin: 0 0.5rem;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid grey;
+  }
+}
+
+
+.colors{
+  padding: 1rem 0;
+
+  .circle {
+    width: 34px;
+    height: 34px;
+    border: 2px solid blue;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: yellow;
+    margin: 0 0.6rem;
+  }  
+}
+
