@@ -1,0 +1,48 @@
+.view {
+  .cards {
+    display: grid;
+    max-width: 1200px;
+    margin: 1.3rem 0;
+    grid-row-gap: 2rem;
+    grid-column-gap: 0.6rem;
+  }
+
+  .card {
+    height: 220px;
+    width: 220px;
+    padding: 1.5rem;
+    box-shadow: 0px 1px 4px 0px hsl(0, 6%, 90%);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.triangle {
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.oval {
+	clip-path: ellipse(28% 40% at 50% 50%);
+}
+
+.round {
+	clip-path: ellipse(40% 40% at 50% 50%);
+}
+
+.rectangle {
+	clip-path: polygon(0 20%, 100% 20%, 100% 80%, 0 80%);
+}
