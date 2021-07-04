@@ -2,11 +2,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  padding: 0.6rem 4rem;
 
   .brand {
-
+    text-transform: uppercase;
   }
 
-  .logout {}
+  .logout {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    P {
+      margin-right: 0.5rem;
+      text-transform: capitalize;
+      color: #db0b0b;
+    }
+
+    svg {
+      width: 26px;
+      height: 26px;
+    }
+  }
 }
