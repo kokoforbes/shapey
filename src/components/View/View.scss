@@ -16,6 +16,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .object {
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 
@@ -46,3 +51,4 @@
 .rectangle {
 	clip-path: polygon(0 20%, 100% 20%, 100% 80%, 0 80%);
 }
+
