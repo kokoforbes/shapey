@@ -7,13 +7,27 @@
 .shapes {
   padding: 1rem  0;
 
-  .btnRounded {
+  button {
     padding: 0.3rem 1.2rem;
     margin: 0 0.5rem;
     border-radius: 50px;
     background-color: transparent;
     border: 1px solid grey;
     cursor: pointer;
+    transition: all .3s;
+    text-transform: capitalize;
+
+    &.active {
+      background: #62845F;
+      border: #62845F 1px solid;
+      color: white;
+    }
+
+    &:hover {
+        	background: #62845F;
+        	border: #62845F 1px solid;
+        	color: white;
+        }
   }
 }
 
