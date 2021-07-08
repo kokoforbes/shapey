@@ -1,11 +1,15 @@
 import React from 'react'
+import styles from "./home.module.scss";
+import Filters from '../../components/Filters/Filters';
+import View from '../../components/View/View';
 
-const home = () => {
+const Home = () => {
   return (
-    <div>
-      
+    <div className={styles.home}>
+      <Filters />
+      <View />
     </div>
-  )
-}
+  );
+};
 
-export default home
+export default Home;
