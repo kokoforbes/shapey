@@ -1,9 +1,3 @@
-.filters {
-  
-
-  
-}
-
 .shapes {
   padding: 1rem  0;
 
@@ -35,14 +29,27 @@
 .colors{
   padding: 1rem 0;
 
-  .circle {
+
+  span {
     width: 34px;
     height: 34px;
-    border: 2px solid blue;
     cursor: pointer;
     border-radius: 50%;
-    background-color: yellow;
     margin: 0 0.6rem;
-  }  
+    transition: all .3s;
+
+
+    &.active {
+      border: blue 2px solid;
+      box-shadow: 0 0 10px 5px blue;
+    }
+  } 
 }
 
+
+.red { background: red; }
+.blue { background: blue; }
+.green { background: green; }
+.yellow { background: yellow; }
+.lightblue { background: skyblue; }
+.grey { background: grey; }

@@ -27,3 +27,10 @@ body {
   display: flex;
   margin: 1rem 0;
 }
+
+.red { background: red; }
+.blue { background: blue; }
+.green { background: green; }
+.yellow { background: yellow; }
+.lightblue { background: skyblue; }
+.grey { background: grey; }

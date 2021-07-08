@@ -4,7 +4,7 @@ import { Dispatch } from 'redux';
 import { ColorInterface, ShapeInterface } from '../../data';
 import { toggleColor, toggleShape } from '../../state/filter/filter.actions';
 import { ApplicationState } from '../../state/root.reducer';
-import styles from "./Filters.module.scss";
+import "./Filters.scss";
 
 
 
@@ -32,7 +32,7 @@ const Filters = (props: FiltersProps) => {
     <div className='filters'>
       <h2>Filters</h2>
 
-      <section className={styles.shapes}>
+      <section className='shapes'>
         <h4 className='text-blue'>Shapes</h4>
 
         <div className='row'>
@@ -49,10 +49,9 @@ const Filters = (props: FiltersProps) => {
         </div>
       </section>
 
-      <section className={styles.colors}>
+      <section className='colors'>
         <h4 className='text-blue'>Colors</h4>
         <div className='row'>
-          <div className={styles.circle}></div>
           {colors.map((colorObject) => (
             <span
               role="button"
