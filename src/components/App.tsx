@@ -12,7 +12,7 @@ interface IProps {
 function App(props: IProps) {
   const { isUserLoggedIn } = props;
   return (
-    <div className="container">
+    <div>
       {isUserLoggedIn ? <Header /> : null}
       {isUserLoggedIn ? <Home /> : <Login />}
     </div>

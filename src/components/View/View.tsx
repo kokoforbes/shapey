@@ -15,10 +15,11 @@ const View = (props: FiltersProps) => {
 
   const { colors, shapes } = props;
   const title = useItemLabel(colors, shapes);
+  const length = selectedLength(colors, shapes)
 
   return (
     <div className='view'>
-      <h3>{title} items. (9)</h3>
+      <h3>{title} items. ({length})</h3>
 
       <div className='cards'>
         {shapes.map((shapeObject) =>
@@ -36,6 +37,13 @@ const View = (props: FiltersProps) => {
     </div>
   )
 }
+
+const selectedLength = (colors: ColorInterface[], shapes: ShapeInterface[]) => {
+  const selectedColors = colors.filter((color) => color.selected);
+  const selectedShapes = shapes.filter((shape) => shape.selected);
+  return selectedColors.length * selectedShapes.length
+}
+
 
 const mapStateToProps = (state: ApplicationState) => ({
   colors: state.filter.colors,

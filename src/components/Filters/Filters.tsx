@@ -35,7 +35,7 @@ const Filters = (props: FiltersProps) => {
       <section className='shapes'>
         <h4 className='text-blue'>Shapes</h4>
 
-        <div className='row'>
+        <div className='shape-row'>
           {shapes.map((shapeObject) => (
             <button
               type="button"
